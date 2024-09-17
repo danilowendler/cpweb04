@@ -1,0 +1,125 @@
+/* Definindo a fonte global */
+body {
+    font-family: 'Roboto', sans-serif; /* Mudança para uma fonte mais moderna */
+    background: linear-gradient(135deg, #f06, #ffba08); /* Gradiente de fundo */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do container principal */
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Estilo do título */
+h1 {
+    color: #444;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Estilo do campo de input */
+input[type="text"] {
+    width: calc(100% - 90px);
+    padding: 12px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    outline: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* Efeito de foco no campo de input */
+input[type="text"]:focus {
+    border-color: #ff6f61;
+    box-shadow: 0 0 8px rgba(255, 111, 97, 0.5);
+}
+
+/* Estilo do botão */
+button {
+    padding: 12px 25px;
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Efeito de hover no botão */
+button:hover {
+    background-color: #e6554d;
+    box-shadow: 0 4px 10px rgba(255, 111, 97, 0.4);
+}
+
+/* Estilo da lista de filmes */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+li {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+/* Efeito de hover nos itens da lista */
+li:hover {
+    background-color: #e6554d;
+    transform: scale(1.02);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo das imagens de coração (favoritar) */
+li img {
+    width: 25px;
+    height: 25px;
+    transition: all 0.3s ease;
+}
+
+/* Efeito de hover no ícone de favoritar */
+li img:hover {
+    transform: scale(1.2);
+}
+
+/* Ajustando responsividade para dispositivos menores */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    input[type="text"] {
+        width: calc(100% - 70px);
+        padding: 10px;
+    }
+
+    button {
+        padding: 10px 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    li {
+        padding: 12px;
+    }
+}
